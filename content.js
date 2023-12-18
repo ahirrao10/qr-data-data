@@ -7,7 +7,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-const outputFilePath = 'data.txt';
+const outputFilePath = 'data1.txt';
 
 // Prompt user for input
 rl.question('Enter text to append to the file: ', (userInput) => {
@@ -15,7 +15,7 @@ rl.question('Enter text to append to the file: ', (userInput) => {
   fs.appendFileSync(outputFilePath, userInput + '\n');
 
   // Run shell command to push updates to git repo
-  const gitCommand = 'git add data.txt && git commit -m "Update data" && git push origin main';
+  const gitCommand = 'git add data1.txt && git commit -m "Update data" && git push origin main';
   exec(gitCommand, (error, stdout, stderr) => {
     if (error) {
       console.error(`Error executing git command: ${error.message}`);
