@@ -9,3 +9,4 @@ abcde
 asfgewgwe
 node "d:\work\self-improvment\UAS\project\real-time data synchronization by flask python\content.js"
 123456789
+python -u "d:\work\self-improvment\UAS\project\real-time data synchronization by flask python\qrcode_scanner.py"
